@@ -1,0 +1,31 @@
+payment-processing-mvp/
+├── backend/
+│   ├── pom.xml
+│   ├── src/main/java/com/payment/
+│   │   ├── PaymentProcessingApplication.java
+│   │   ├── controller/
+│   │   ├── service/
+│   │   ├── repository/
+│   │   ├── entity/
+│   │   ├── dto/
+│   │   ├── security/
+│   │   └── config/
+│   └── src/main/resources/application.properties
+│
+├── frontend/
+│   ├── package.json
+│   ├── public/index.html
+│   └── src/
+│       ├── App.jsx
+│       ├── components/
+│       ├── services/
+│       └── styles/
+│
+├── docs/
+│   ├── API_DOCUMENTATION.md
+│   ├── SETUP_GUIDE.md
+│   └── DATABASE_SCHEMA.md
+│
+├── README.md
+├── .gitignore
+└── .env.example
