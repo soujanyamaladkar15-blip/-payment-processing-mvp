@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment MVP</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:16px}
+    .container{max-width:520px;margin:0 auto}
+    label{display:block;margin-top:10px}
+    input{width:100%;padding:8px;margin-top:4px;box-sizing:border-box}
+    .error{color:#b00020;font-size:0.9em}
+    .success{color:green}
+    button{margin-top:12px;padding:10px 14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Payment Form</h2>
+    <form id="paymentForm">
+      <label>Full Name
+        <input type="text" id="name" name="name" required minlength="3" />
+        <div id="err-name" class="error"></div>
+      </label>
+      <label>Email
+        <input type="email" id="email" name="email" required />
+        <div id="err-email" class="error"></div>
+      </label>
+      <label>Contact Number
+        <input type="tel" id="contact" name="contact" required pattern="\d{10}" />
+        <div id="err-contact" class="error"></div>
+      </label>
+      <label>Amount (₹)
+        <input type="text" id="amount" name="amount" placeholder="100.00" required />
+        <div id="err-amount" class="error"></div>
+      </label>
+      <button type="submit">Pay Now</button>
+    </form>
+    <div id="message"></div>
+    <hr />
+    <h3>Previous Payments</h3>
+    <div id="paymentsList">Loading...</div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
